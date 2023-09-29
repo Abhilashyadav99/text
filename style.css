@@ -1,0 +1,118 @@
+
+
+body{
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    
+   
+
+}
+.box{
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+    
+    
+    
+    
+
+}
+
+.box2{
+    height: 200px;
+    width: 200px;
+    border-radius: 200px;
+    background: conic-gradient(red,yellow, green,red,yellow, green,red, yellow, green);
+    animation-duration: 5s;
+    animation-name: move;
+    animation-iteration-count: infinite;
+   
+    
+
+}
+@keyframes move{
+    0%{
+         transform: translate(0px,-150px); 
+         
+        
+        
+        
+    }
+    25%{
+        transform: translate(1050px,-150px);
+        
+        
+    }
+    50%{
+        transform: translate(1050px,300px);
+        
+    }
+    75%{
+        transform: translate(0px,300px);
+        
+    }
+    100%{
+        transform: translate(0px,-150px);
+        
+    }
+    
+
+    
+}
+
+@media screen and (max-width:580px) {
+
+    body{
+        
+        overflow: hidden;
+    }
+   .box{
+    
+    color: white;
+    text-align: center;
+    
+    
+    
+
+   }
+   .box2{
+   height: 100px;
+    width: 100px;
+    border-radius: 100px;
+}
+   
+    @keyframes move{
+        0%{
+             transform: translate(0px,-100px); 
+             
+            
+            
+            
+        }
+        25%{
+            transform: translate(400px,-100px);
+            
+            
+        }
+        50%{
+            transform: translate(400px,300px);
+            
+        }
+        75%{
+            transform: translate(0px,300px);
+            
+        }
+        100%{
+            transform: translate(0px,-100px);
+            
+        }
+        
+    
+        
+    }
+    
+   }
+
+
+    
